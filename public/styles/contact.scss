@@ -1,0 +1,329 @@
+$themeColor: #91f6c4;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  position: relative;
+  
+
+  img.flxed-image {
+    min-height: 100vh;
+    position: fixed;
+    width: 100%;
+    z-index: -5;
+    bottom: 0;
+    left: 0;
+  }
+
+  header {
+    // position: sticky;
+    // top: 0;
+    // z-index: 10;
+    width: 100%;
+    justify-content: center;
+    background-color: rgba(39, 37, 37, 0.651);
+    display: flex;
+    flex-wrap: wrap;
+
+    section.logo {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      a {
+        text-decoration: none;
+
+        h1 {
+          color: white;
+          font-size: 2rem;
+          margin: 0 2.5rem 0 2.5rem;
+          cursor: pointer;
+        }
+      }
+      a {
+        img {
+          width: 6vw;
+          height: 6vw;
+          cursor: pointer;
+        }
+      }
+    }
+
+    section.searcharea {
+      
+      .wrap {
+        max-width: 600px;
+        // margin: 20px auto 0 auto;
+        margin: 1rem;
+        height: auto;
+      }
+      .search-bar {
+        width: 100%;
+        height: 32px;
+        font-size: 20px;
+        border: 1px solid #83817f;
+        // background-color: #efe9e7;
+      }
+      .search-btn {
+        width: 36px;
+        height: 32px;
+        color: white;
+        border: 1px solid white;
+        background-color: #83817f;
+        margin-left: 0.5rem;
+        position: absolute;
+        cursor: pointer;
+      }
+
+      nav {
+        margin: 1rem;
+
+        ul {
+          display: flex;
+          list-style-type: none;
+          justify-content: space-around;
+
+          li {
+            a {
+              color: white;
+              text-decoration: none;
+              font-size: 1.35rem;
+              transition: all 0.2s ease;
+              // padding-bottom: 0.3rem;
+              margin: 2rem 2rem 2rem 0;
+
+              &:hover {
+                color: $themeColor;
+                border-bottom: 3px solid $themeColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    background-color: rgba(39, 37, 37, 0.651);
+    width: 100%;  
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    section.contacts {
+      
+      // border: 2px solid orange;
+      background-color: rgba(39, 37, 37, 0.671);
+      width: 50%;
+      h3 {
+        font-size: 2rem;
+        color: white;
+        margin-top: 1rem;
+      
+      }
+      hr {
+        color: $themeColor;       
+         margin: 1rem 9rem 1rem 9rem;
+      }
+
+      p {
+        font-size: 1rem;
+        padding: 1rem;
+        color: white;
+      }
+      input {
+        font-size: 1.2rem;
+        // width: 28vw;
+        width: 60%;
+        height: 5vh;
+        margin: 1rem;
+        padding: 0.8rem;
+      }
+      .question {     
+        height: 8vh;
+        
+      }
+
+      .btn {
+        display: block;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        border-radius: 7%;             
+        margin-left: 45%;   
+        background-color: $themeColor;
+      }
+
+      h4 {
+        margin-left: 0.5rem;
+        padding: 1.5rem;
+        color: white;
+        font-size: 1.2rem;
+        text-decoration: none;
+        a {
+          text-decoration: none;
+          color: $themeColor;
+        }
+      }
+    }
+  }
+
+  footer {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    // background-color: rgba(0, 0, 0, 0.3);
+     background-color: rgba(39, 37, 37, 0.651);
+
+  
+          section.logo {
+    
+      img {
+        width: 15vw;
+      }
+      h3 {
+        margin: 0.5rem;
+        font-size: 2rem;
+      }
+    }
+    nav {
+     
+              ul {
+                display: flex;
+                padding: 0.5rem;
+                list-style-type: none;
+                a {
+                  color: white;
+                  margin: 0.5rem;
+                  text-decoration: none;
+                  transition: all 0.2s ease;
+                  &:hover {
+                    color: $themeColor;
+                  }
+                }
+      
+              }
+        }         
+    section.links {
+   
+      margin-top: 1.5rem;
+            a {
+              img {
+                width: 5vh;
+                margin: 0rem 1rem;
+              }
+            }
+    }
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  body {
+      header{
+        
+            section.searcharea {
+              .search-bar {
+  
+                display: none;
+              }
+              .search-btn {
+                display: none;
+              }
+
+  nav {
+  
+        ul {
+          
+    flex-direction: column;
+
+          li {
+            margin:0.5rem;
+          }
+        }
+      }
+          }
+    
+      }
+      main {
+        section.contacts {
+
+          h3 {
+            font-size: 1rem;
+            margin-top: 0.8rem;
+          
+          }
+          hr {    
+             margin: 0.8rem;
+          }
+    
+          p {
+            font-size: 0.8rem;
+            padding: 0.7rem;
+
+          }
+          input {
+            font-size: 1.2rem;
+            width: 80%;
+            height: 5vh;
+            margin: 0.5rem;
+            padding: 0.5rem;
+          }
+          .question {     
+            height: 5vh;
+            
+          }
+    
+          .btn {
+
+            padding: 0.5rem;
+            font-size: 0.5rem;
+          
+            margin-left: 35%;   
+          }
+    
+          h4 {
+            margin-left: 0.5rem;
+            padding: 1rem;
+            font-size: 0.7rem;
+          }
+        }
+      }
+
+    }
+  }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $themeColor;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0e6854;
+}

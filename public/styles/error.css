@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  position: relative;
+  width: 100%;
+}
+body img.flxed-image {
+  min-height: 100vh;
+  position: fixed;
+  aspect-ratio: 16/9;
+  width: 100%;
+  z-index: -5;
+  bottom: 0;
+  left: 0;
+}
+body main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+body main .error {
+  width: 60%;
+}
+body main .error .error-title h3 {
+  font-size: 2rem;
+  color: white;
+  margin-top: 1rem;
+}
+body main .error .error-title hr {
+  color: #91f6c4;
+  margin: 1rem 9rem 1rem 9rem;
+}
+body main .error .error-msg div {
+  font-size: 2rem;
+  color: red;
+}
+body main .error .error-msg div a {
+  font-size: 2rem;
+  color: white;
+  transition: all 0.2s ease;
+}
+body main .error .error-msg div a:hover {
+  color: #91f6c4;
+}

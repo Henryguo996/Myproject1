@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-Hants">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>會員資料-韓迷!韓劇播出介紹</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/memberprofile.css" />
+  </head>
+  <body>
+    <img class="flxed-image" src="images/韓迷背景.jpg" alt="fixed-image" />
+
+    <header>
+      <section class="logo">
+        <a href="/">
+          <img title="韓迷!韓劇播出介紹" src="Icons/mylogo1.svg" alt="nicev" />
+        </a>
+        <a href="/">
+          <h1 title="韓迷!韓劇播出介紹">韓劇迷！~</h1>
+        </a>
+      </section>
+
+      <section class="searcharea">
+        <div class="wrap">
+          <div class="search">
+            <input
+              class="search-bar"
+              type="text"
+              name="search"
+              id="search"
+              placeholder=""
+            />
+            <button title="搜尋" class="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <nav>
+          <ul>
+            <li>
+              <a target="_blank" href="/news1"
+                ><i class="fa-solid fa-envelope-open-text"></i> 韓劇新聞</a
+              >
+            </li>
+            <li>
+              <a href="/member"
+                ><i class="fa-solid fa-magnifying-glass-chart"></i>
+                韓劇開播情報</a
+              >
+            </li>
+            <li>
+              <a href="/membertop10"
+                ><i class="fa-solid fa-ranking-star"></i> 韓劇TOP10排行</a
+              >
+            </li>
+            <!-- <li>
+              <a href="http://localhost:3000/memberprofile"
+                ><i class="fa-solid fa-user-group"></i> 會員資料</a
+              >
+            </li> -->
+            <li>
+              <a href="/signout"
+                ><i class="fa-solid fa-user-group"></i> 會員登出</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <section class="update">
+        <h3>基本資料</h3>
+        <hr />
+
+        <form action="/update" method="POST">
+          <p>名稱：<%= name %> <br /></p>
+          <p>電子郵件：<%= email %> <br /></p>
+          <!-- <p>生日：<%= birthday %> <br /></p>
+          <p>電話：<%= phone %> <br /></p> -->
+          <p>
+            變更密碼：<input
+              type="password"
+              name="password"
+              minlength="3"
+              maxlength="20"
+              pattern="[0-9a-fA-F]{6,8}"
+              value=""
+              onkeyup="value=value.replace(/\s+/g,'')"
+              placeholder="6-8位英文或數字"
+            />
+            <button>確認</button>
+          </p>
+          <br />
+        </form>
+        <form class="del-area" action="/delete" method="POST">
+          <p>帳號刪除：</p>
+          <button>刪除</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <section class="logo">
+        <img src="Icons/mylogo1.svg" alt="nicev996" />
+        <h3>韓迷-韓劇播出介紹</h3>
+      </section>
+      <nav>
+        <ul>
+          <li>
+            <a  href="/company">關於我們</a>
+          </li>
+          <li>
+            <a href="#">服務條款</a>
+          </li>
+          <li>
+            <a href="#">隱私政策</a>
+          </li>
+          <li>
+            <a  href="/contact">聯絡我們</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="links">
+        <a
+          title="Youtube"
+          target="_blank"
+          href="https://www.youtube.com/@nicev996"
+          ><img src="Icons/youtube.svg" alt="youtube"
+        /></a>
+        <a title="twitter" target="_blank" href="https://twitter.com/HYV996"
+          ><img src="Icons/twitter.svg" alt="twitter"
+        /></a>
+        <a
+          title="Facebook"
+          target="_blank"
+          href="https://www.facebook.com/profile.php?id=100091266142253"
+          ><img src="Icons/facebook.svg" alt="facebook"
+        /></a>
+        <a
+          title="instagram"
+          target="_blank"
+          href="https://www.instagram.com/nicev996/"
+          ><img src="Icons/instagram.svg" alt="instagram"
+        /></a>
+      </section>
+    </footer>
+
+    <script>
+      var emailupdate = (
+        <input type="text" name="email" class="email" placeholder="" />
+      );
+      function mouseDown() {
+        document.querySelector("btn-email") = emailupdate;
+      }
+    </script>
+  </body>
+</html>

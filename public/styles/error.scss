@@ -1,0 +1,89 @@
+$themeColor: #91f6c4;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  img.flxed-image {
+    min-height: 100vh;
+    position: fixed;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    z-index: -5;
+    bottom: 0;
+    left: 0;
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    .error {
+      width: 60%;
+      .error-title {
+        h3 {
+          font-size: 2rem;
+          color: white;
+          margin-top: 1rem;
+        }
+        hr {
+          color: $themeColor;
+          margin: 1rem 9rem 1rem 9rem;
+        }
+      }
+
+      .error-msg {
+        div {
+          font-size: 2rem;
+          color: red;
+        }
+        div {
+          a {
+            font-size: 2rem;
+            color: white;
+            transition: all 0.2s ease;
+            &:hover {
+              color: $themeColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $themeColor;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0e6854;
+}

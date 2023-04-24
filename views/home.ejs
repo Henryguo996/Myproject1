@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-Hants">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NICE-V 韓劇迷！</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="Icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/home.css" />
+  </head>
+  <body>
+    <img
+      class="flxed-image"
+      src="images/韓迷背景1.jpg"
+      alt="fixed-image"
+    />
+
+    <header>
+      <section class="logo">
+        <a href="#">
+          <img
+            title="NICE-V 韓劇迷！"
+            src="Icons/mylogo1.svg"
+            alt="NICE-V"
+          />
+        </a>
+        <a href="#">
+          <h1 title="NICE-V 韓劇迷！">韓劇迷！~</h1>
+        </a>
+      </section>
+
+      <section class="searcharea">
+        <div class="wrap">
+          <div class="search">
+            <input
+              class="search-bar"
+              type="text"
+              name="search"
+              id="search"
+              placeholder=""
+            />
+            <button title="搜尋" class="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <nav>
+          <ul>
+            <li>
+              <a href="/news1"
+                ><i class="fa-solid fa-envelope-open-text"></i> 韓劇新聞</a
+              >
+            </li>
+            <li>
+              <a href="/member"
+                ><i class="fa-solid fa-magnifying-glass-chart"></i>
+                韓劇開播情報</a
+              >
+            </li>
+            <li>
+              <a href="/membertop10"
+                ><i class="fa-solid fa-ranking-star"></i> 韓劇TOP10排行</a
+              >
+            </li>
+            <li>
+              <a href="/member"
+                ><i class="fa-solid fa-user-group"></i> 會員</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <!-- <section class="background-img-father">
+        <section class="background-img">
+          <div class="filter"></div>
+          <h3>趕快來挑選一部來追劇...</h3>
+        </section>
+      </section> -->
+
+      <!-- 主體mySlides fade是緩緩消失的js -->
+      <section class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <!-- 左上標 -->
+          <!-- <div class="numbertext">1 / 1</div> -->
+          <a href="/member3-11">
+            <img src="images/三月韓劇/放學後戰爭活動.jpg" />
+          </a>
+
+          <!-- 圖片介紹 -->
+          <!-- <div class="text">放學後戰爭活動</div> -->
+        </div>
+
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">1 / 2</div> -->
+          <a href="/member3-9">
+            <img src="images/三月韓劇/是金子阿是玉子.jpg" />
+          </a>
+          <!-- <div class="text">是金子阿是玉子</div> -->
+        </div>
+
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">1 / 3</div> -->
+          <a href="/member3-10">
+            <img src="images/三月韓劇/朝鮮律師.jpg" />
+          </a>
+
+          <!-- <div class="text">朝鮮律師</div> -->
+        </div>
+
+        <!-- 主體控制左右面版 -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </section>
+      <!-- 原點元件 -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <section class="info-opening">
+        <section class="info-news">
+          <h3>韓劇新聞</h3>
+          <hr />
+          <div class="newstv1">
+            <a target="_blank" href="/news1">
+              <img
+                title="黑暗榮耀"
+                src="images/韓劇新聞/宋慧喬.jpg"
+                alt="黑暗榮耀"
+              />
+            </a>
+
+            <a target="_blank" href="/news1">
+              如果把復仇神劇《黑暗榮耀》改成柯南畫風會長怎樣？<br />
+              神還原涎鎮的歪嘴，宋慧喬飾演的文同珢秒變路人 <br />
+            </a>
+          </div>
+          <div class="newstv2">
+            <a target="_blank" href="/news2">
+              <img
+                title="特務家族"
+                src="images/韓劇新聞/張赫＆張娜拉.png"
+                alt="特務家族"
+              />
+            </a>
+
+            <a target="_blank" href="/news2"
+              >新劇《特務家族》製作發佈會】 <br />
+              張赫＆張娜拉睽違9年四度合作：<br />
+              最強特工 VS 家庭主婦，上演諜報喜劇！
+            </a>
+          </div>
+          <div class="newstv3">
+            <a target="_blank" href="/news3">
+              <img
+                title="模範計程車2"
+                src="images/韓劇新聞/文彩元.jpg"
+                alt="模範計程車2"
+              />
+            </a>
+
+            <a target="_blank" href="/news3">
+              「SBS金土劇宇宙」？ 文彩元繼南宮珉&金素妍之後
+              <br />加盟《模範計程車2》客串陣容，
+              <br />本週六大結局延長至80分鐘！
+            </a>
+          </div>
+        </section>
+        <section class="info-top10">
+          <h3>三月收視率排行</h3>
+          <hr />
+          <div class="top10s">
+            <a href="/membertop10">
+              <img
+                title="黑暗榮耀2"
+                src="images/三月韓劇/黑暗榮耀2.jpg"
+                alt="黑暗榮耀2"
+              />
+            </a>
+
+            <a href="/membertop10">
+              主演：<br />
+              宋慧喬、李到晛、林智妍、廉惠蘭、朴成勳、鄭星一、金赫拉、車珠英、金建宇
+            </a>
+          </div>
+          <div>
+            <div class="top10list">
+              <p>
+                <a href="/membertop10">Top1:黑暗榮耀2</a>
+              </p>
+              <a href="/membertop10">Top2:模範計程車2</a>
+              <a href="/membertop10">Top3:秘密的女人</a>
+              <a href="/membertop10"
+                >Top4:原來這就是愛啊</a
+              >
+              <a href="/membertop10">Top5:綠洲</a>
+              <a href="/membertop10"
+                >Top6:離婚律師申晟瀚</a
+              >
+              <a href="/membertop10"
+                >Top7:潘朵拉：偽造的樂園</a
+              >
+              <a href="/membertop10">Top8:青春月譚</a>
+              <a href="/membertop10">Top9:木偶的季節</a>
+              <a href="/membertop10">Top10:神聖的偶像</a>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <button class="backtop" onclick="backtop()"></button>
+    </main>
+
+    <footer>
+      <section class="logo">
+        <img src="Icons/mylogo1.svg" alt="nicev996" />
+        <h3>韓迷-韓劇播出介紹</h3>
+      </section>
+      <nav>
+        <ul>
+          <li>
+            <a href="/company">關於我們</a>
+          </li>
+          <li>
+            <a href="#">服務條款</a>
+          </li>
+          <li>
+            <a href="#">隱私政策</a>
+          </li>
+          <li>
+            <a href="/contact">聯絡我們</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="links">
+        <a
+          title="Youtube"
+          target="_blank"
+          href="https://www.youtube.com/@nicev996"
+          ><img src="Icons/youtube.svg" alt="youtube"
+        /></a>
+        <a title="twitter" target="_blank" href="https://twitter.com/HYV996"
+          ><img src="Icons/twitter.svg" alt="twitter"
+        /></a>
+        <a
+          title="Facebook"
+          target="_blank"
+          href="https://www.facebook.com/profile.php?id=100091266142253"
+          ><img src="Icons/facebook.svg" alt="facebook"
+        /></a>
+        <a
+          title="instagram"
+          target="_blank"
+          href="https://www.instagram.com/nicev996/"
+          ><img src="Icons/instagram.svg" alt="instagram"
+        /></a>
+      </section>
+    </footer>
+
+    <!-- <script>
+      setInterval(() => {
+        let topBackground = document.querySelector("section.background-img");
+        if (
+          topBackground.style.backgroundImage ==
+          'url("/public/images/三月韓劇/放學後戰爭活動.jpg")'
+        ) {
+          topBackground.style.backgroundImage =
+            'url("/public/images/三月韓劇/花書生熱愛史.jpg")';
+        } else if (
+          topBackground.style.backgroundImage ==
+          'url("/public/images/三月韓劇/花書生熱愛史.jpg")'
+        ) {
+          topBackground.style.backgroundImage =
+            'url("/public/images/三月韓劇/真的出現了.jpg")';
+        } else {
+          topBackground.style.backgroundImage =
+            'url("/public/images/三月韓劇/放學後戰爭活動.jpg")';
+        }
+      }, 3000);
+    </script> -->
+
+    <script>
+      //自動輪播
+      var timer = undefined;
+
+      var timer = setInterval(function () {
+        function plusSlides(n) {
+          currentSlide(slideIndex + 1);
+        }
+        plusSlides();
+      }, 5000);
+      setTimer();
+
+      // if (timer == null) {
+      //   setTimer();
+      // } else {
+      //   document
+      //     .querySelector(".slideshow-container")
+      //     .addEventListener("mouseenter", (event) => {
+      //       clearInterval(timer);
+      //       timer == null;
+      //     });
+      // }
+
+      // document.querySelector(".slideshow-container")
+      //   .addEventListener("mouseenter", (evnet) => {
+      //     if (timer == null) {
+      //       setTimer();
+      //     } else {
+      //       clearInterval(timer);
+      //       timer = null;
+      //     }
+      //   });
+
+      // document
+      //   .querySelector(".slideshow-container")
+      //   .addEventListener("click", (evnet) => {
+      //     clearInterval(timer);
+      //   });
+
+      // document
+      //   .querySelector(".slideshow-container")
+      //   .addEventListener("mouseenter", (event) => {
+      //     clearInterval(timer);
+      //   });
+
+      // document
+      //   .querySelector(".slideshow-container")
+      //   .addEventListener("mouseenter", (event) => {
+      //     clearInterval(timer);
+      //   });
+
+      // document
+      //   .querySelector(".slideshow-container")
+      //   .addEventListener("mouseleave", (event) => {
+      //     setTimer();
+      //   });
+
+      // document
+      //   .querySelector(".slideshow-container")
+      //   .addEventListener("mouseout", (event) => {
+      //     setTimer();
+      //   });
+    </script>
+
+    <script>
+      // 當你的網頁匯入的時候，就會被執行了，所以設定了一個slideIndex的變數，好紀錄接下來要顯示的位置，然後執行紅框的function
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      //   用來觸及左右移動的地方，當左右移動鍵被碰到，就會執行他，這裡還記得上面html寫的，往左就是-1給slideIndex，往右+1給slideIndex，所以改變位置後，接下來就是丟給紅框的function
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+      //   點點觸及後，就會執行這個變數，記得上面html每一個點點都寫了他的位置，所以slideIndex直接等於點點給的位置，然後丟給紅框的function
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        // 設定接下來會用到變數，分別是i迴圈用的，slides抓每一個圖片的區塊，dots每一個點點
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        // 設定只要超過輪播圖片的數量，就回到最初或是最後，第一個if 設定只要現在超過輪播圖片最後一張，設定回到第一張，第二個if 小於第一張就會回到最後一張
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        // 第一個for將所有的，圖片區塊，都消失不見，所以將他們CSS中的display取消，第二個for將所有點點CSS中的active取代成””就是取消，而這個CSS呢，變成深色，從下面的圖可以看到，所以現在所有點點都是淺灰色
+
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        // 因為框取消了所有圖片區塊地顯示跟深色的點點，所以我們現在要把需要出現的圖片顯示出來，以及現在停留在哪一張圖的點點變成重點深色
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+    <script>
+      //回頂端
+      function backtop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>

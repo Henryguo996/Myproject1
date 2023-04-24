@@ -1,0 +1,259 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  position: relative;
+}
+body img.flxed-image {
+  min-height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: -5;
+  bottom: 0;
+  left: 0;
+}
+body header {
+  width: 100%;
+  justify-content: center;
+  background-color: rgba(39, 37, 37, 0.651);
+  display: flex;
+  flex-wrap: wrap;
+}
+body header section.logo {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+body header section.logo a {
+  text-decoration: none;
+}
+body header section.logo a h1 {
+  color: white;
+  font-size: 2rem;
+  margin: 0 2.5rem 0 2.5rem;
+  cursor: pointer;
+}
+body header section.logo a img {
+  width: 6vw;
+  height: 6vw;
+  cursor: pointer;
+}
+body header section.searcharea .wrap {
+  max-width: 600px;
+  margin: 1rem;
+  height: auto;
+}
+body header section.searcharea .search-bar {
+  width: 100%;
+  height: 32px;
+  font-size: 20px;
+  border: 1px solid #83817f;
+}
+body header section.searcharea .search-btn {
+  width: 36px;
+  height: 32px;
+  color: white;
+  border: 1px solid white;
+  background-color: #83817f;
+  margin-left: 0.5rem;
+  position: absolute;
+  cursor: pointer;
+}
+body header section.searcharea nav {
+  margin: 1rem;
+}
+body header section.searcharea nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+body header section.searcharea nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.35rem;
+  transition: all 0.2s ease;
+  margin: 2rem 2rem 2rem 0;
+}
+body header section.searcharea nav ul li a:hover {
+  color: #91f6c4;
+  border-bottom: 3px solid #91f6c4;
+}
+body main {
+  background-color: rgba(39, 37, 37, 0.651);
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+body main section.update {
+  background-color: rgba(39, 37, 37, 0.671);
+  width: 50%;
+}
+body main section.update h3 {
+  font-size: 2rem;
+  color: white;
+  margin-top: 1rem;
+}
+body main section.update hr {
+  color: #91f6c4;
+  margin: 1rem 15rem 1rem 15rem;
+}
+body main section.update form {
+  width: 100%;
+  margin: 0 0 0 12vw;
+  text-align: left;
+}
+body main section.update form p {
+  font-size: 2rem;
+  padding: 1rem;
+  color: white;
+}
+body main section.update form p input {
+  font-size: 1.2rem;
+  width: 30%;
+  height: 5vh;
+  padding: 1rem;
+}
+body main section.update form p button {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 7%;
+  background-color: #91f6c4;
+}
+body main section.update .del-area {
+  display: flex;
+}
+body main section.update .del-area p {
+  margin-top: 0.5rem;
+  padding: 1rem;
+}
+body main section.update .del-area button {
+  margin: 1.2rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 7%;
+  background-color: red;
+}
+body footer {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: rgba(39, 37, 37, 0.651);
+}
+body footer section.logo img {
+  width: 15vw;
+}
+body footer section.logo h3 {
+  margin: 0.5rem;
+  font-size: 2rem;
+}
+body footer nav ul {
+  display: flex;
+  padding: 0.5rem;
+  list-style-type: none;
+}
+body footer nav ul a {
+  color: white;
+  margin: 0.5rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+body footer nav ul a:hover {
+  color: #91f6c4;
+}
+body footer section.links {
+  margin-top: 1.5rem;
+}
+body footer section.links a img {
+  width: 5vh;
+  margin: 0rem 1rem;
+}
+
+@media screen and (max-width: 2000px) {
+  body main section.update hr {
+    display: none;
+  }
+}
+@media screen and (max-width: 822px) {
+  body header section.searcharea .search-bar {
+    display: none;
+  }
+  body header section.searcharea .search-btn {
+    display: none;
+  }
+  body header section.searcharea nav ul {
+    flex-direction: column;
+  }
+  body header section.searcharea nav ul li {
+    margin: 0.5rem;
+  }
+  body main section.update {
+    width: 100%;
+  }
+  body main section.update h3 {
+    margin-top: 0.5rem;
+  }
+  body main section.update form p {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  body main section.update form p input {
+    margin-top: 1rem;
+    display: flex;
+    font-size: 1.2rem;
+    min-width: 40%;
+    height: 4vh;
+    padding: 0.5rem;
+  }
+  body main section.update form p button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  body main section.update .del-area p {
+    margin-top: 0.5rem;
+    padding: 1rem;
+  }
+  body main section.update .del-area button {
+    margin: 1.2rem 0 1.2rem -0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #91f6c4;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0e6854;
+}/*# sourceMappingURL=memberprofile.css.map */

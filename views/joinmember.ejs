@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-Hants">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>會員登入-NICE-V 韓劇迷！</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/joinmember.css" />
+  </head>
+  <body>
+    <img class="flxed-image" src="images/韓迷背景2.jpg" alt="fixed-image" />
+
+    <header>
+      <section class="logo">
+        <a href="/">
+          <img title="NICE-V 韓劇迷！" src="Icons/mylogo1.svg" alt="NICE-V" />
+        </a>
+        <a href="/">
+          <h1 title="NICE-V 韓劇迷！">韓劇迷！~</h1>
+        </a>
+      </section>
+
+      <section class="searcharea">
+        <div class="wrap">
+          <div class="search">
+            <input
+              class="search-bar"
+              type="text"
+              name="search"
+              id="search"
+              placeholder=""
+            />
+            <button title="搜尋" class="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <nav>
+          <ul>
+            <li>
+              <a target="_blank" href="/news1"
+                ><i class="fa-solid fa-envelope-open-text"></i> 韓劇新聞</a
+              >
+            </li>
+            <li>
+              <a href="/member"
+             
+                ><i class="fa-solid fa-magnifying-glass-chart"></i>
+                韓劇開播情報</a
+              >
+            </li>
+            <li>
+              <a href="/membertop10"
+                ><i class="fa-solid fa-ranking-star"></i> 韓劇TOP10排行</a
+              >
+            </li>
+            <li>
+              <a href="/member"
+                ><i class="fa-solid fa-user-group"></i> 會員</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <section class="info-members">
+        <div>
+          <h3>會員專區</h3>
+        </div>
+      </section>
+      <section class="members">
+        <div>
+          <form action="/signup" method="POST">
+            <h2>註冊新會員</h2>
+            <input
+              type="text"
+              name="name"
+              placeholder="名稱"
+              value=""
+              onkeyup="value=value.replace(/\s+/g,'')"
+            /><br />
+            <input
+              type="text"
+              name="email"
+              placeholder="電子郵件"
+              minlength="3"
+              maxlength="20"
+              value=""
+              onkeyup="value=value.replace(/\s+/g,'')"
+            /><br />
+            <input
+              type="password"
+              name="password"
+              minlength="3"
+              maxlength="20"
+              pattern="[0-9a-fA-F]{6,8}"
+              value=""
+              onkeyup="value=value.replace(/\s+/g,'')"
+              placeholder="新增密碼6-8位數"
+            /><br />
+            <input
+              type="password"
+              name="password2"
+              minlength="3"
+              maxlength="20"
+              pattern="[0-9a-fa-F]{6,8}"
+              value=""
+              onkeyup="value=value.replace(/\s+/g,'')"
+              placeholder="確認密碼"
+            /><br /><br />
+            <button class="btn1">註冊</button><br />
+          </form>
+        </div>
+        <div>
+          <form action="/signin" method="POST">
+            <h2>會員登入</h2>
+            <input type="text" name="email" placeholder="電子郵件" /><br />
+            <input type="password" name="password" placeholder="密碼" /><br />
+            <button>登入</button><br />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="logo">
+        <img src="Icons/mylogo1.svg" alt="nicev996" />
+        <h3>韓迷-韓劇播出介紹</h3>
+      </section>
+      <nav>
+        <ul>
+          <li>
+            <a target="_blank" href="/company">關於我們</a>
+          </li>
+          <li>
+            <a href="#">服務條款</a>
+          </li>
+          <li>
+            <a href="#">隱私政策</a>
+          </li>
+          <li>
+            <a target="_blank" href="/contact">聯絡我們</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="links">
+        <a
+          title="Youtube"
+          target="_blank"
+          href="https://www.youtube.com/@nicev996"
+          ><img src="Icons/youtube.svg" alt="youtube"
+        /></a>
+        <a title="twitter" target="_blank" href="https://twitter.com/HYV996"
+          ><img src="Icons/twitter.svg" alt="twitter"
+        /></a>
+        <a
+          title="Facebook"
+          target="_blank"
+          href="https://www.facebook.com/profile.php?id=100091266142253"
+          ><img src="Icons/facebook.svg" alt="facebook"
+        /></a>
+        <a
+          title="instagram"
+          target="_blank"
+          href="https://www.instagram.com/nicev996/"
+          ><img src="Icons/instagram.svg" alt="instagram"
+        /></a>
+      </section>
+    </footer>
+  </body>
+</html>
